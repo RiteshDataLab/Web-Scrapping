@@ -1,0 +1,44 @@
+<doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head
+<body>
+    <div class="container">
+    <form action="/" method="post">
+        <label for="user_name">Username:</label>
+        <input type="text" id="user_name" name="user_name" placeholder="Enter Instagram username">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div class="profile-details">
+        <h2>User Profile Details :</h2>
+        <p>{{ description }}</p>
+    </div>
+    
+    <div class="profile-image">
+        <h2>User Profile Image:</h2>
+        <img src="{{ profile_image_url }}" alt="User Profile Image" >
+    </div>
+</div>
+
+<center>
+<h1><span>**Note: Please be aware that our Instagram scraping page has certain limitations.<br>
+    <br>
+    <br>
+
+    1. **Private Accounts:** Our scraping functionality does not work with private Instagram accounts. Due to Instagram's privacy settings, we are unable to access data from private accounts.<br>
+<br>
+<br>
+    2. **Data Delay:** The information provided by our scraping service might not be in real-time. There is typically a delay of around 2 to 3 days before the data is made available for scraping. This is due to the way Instagram makes its data accessible and the frequency at which we update our scraping processes.<br>
+    <br>
+    <br>
+    We apologize for any inconvenience these limitations might cause. We strive to provide accurate and timely data, but these factors are beyond our control due to the restrictions imposed by Instagram's policies. Thank you for your understanding.
+    </span></h1></center>
+
+
+</body>
+</html>
